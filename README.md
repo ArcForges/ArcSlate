@@ -37,5 +37,8 @@ CI verifies the native window, UI action, live greeting, Unicode/boundaries, gRP
 The repository check enforces the [project licence boundary](docs/licence-boundary.md)
 for the application, core library, tests and C# tooling. Every build also checks
 the effective MSBuild declarations and local project references.
+The [provenance process](docs/provenance.md) verifies recorded source reuse, immutable
+review history and complete legal/source receipts in actual portable archives.
+The native application remains a C# Avalonia/Skia consumer of exact published packages.
 
 Read [CONTRIBUTING](CONTRIBUTING.md), [security reporting](SECURITY.md) and the [code of conduct](CODE_OF_CONDUCT.md). ArcSlate remains **AGPL-3.0-only**; see [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
