@@ -16,14 +16,19 @@ actual dirty state and reject a source mismatch. Build identity records the full
 source commit, local/CI kind, run and attempt, pipeline URL and Git source timestamp.
 Contracts stays pinned to 1.0.0-ci.36.1; its Hello schema major remains separate.
 
-The repository tool reads actual app/core/test/tool PE metadata. Preparation runs
-the compiled AOT app and compares its report with independent source/run/lock inputs.
-Archive verification requires the sealed report and rejects tampering even after
-an outer archive hash is recomputed. Five native CI hosts retain their existing UI
-and real Cloud checks. Public archives and downloaded runtime are verified again.
+The repository tool statically reads actual app/core/test/tool PE metadata once.
+Preparation writes `build-identity.json` from the reviewed Git/run/release, restored
+dependency and committed source inputs without launching the AOT app. This packaged
+build-input receipt is not runtime execution evidence. The app's explicit local
+`--build-info` command remains available for relevant support diagnostics.
+Publication checks candidate identity and legal/source integrity once. CI has three
+Windows/Linux compilation targets, no macOS/UI/live execution and no routine public
+archive download or runtime verification cycle.
 
 The immutable `arcnotes-provenance-tools-r2` record describes the reviewed source
 adaptation and retains its predecessor and original terms. Mechanism tests mutate
 all nine sources independently and reject malformed/aliased/missing sources, wrong
 build identity and changed archive members. Synthetic version declarations are
 mechanism evidence, not acceptance of future format or compatibility implementations.
+
+The r3 provenance successor retains r1/r2 and records the CI/release reduction without changing the original runtime implementation or dependency pins.

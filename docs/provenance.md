@@ -43,18 +43,16 @@ record change, `provenance-notice` renders the source summary. Tests cover missi
 fields/records, forbidden licence boundaries, modified bytes, unsafe paths, removed
 history and changed notices.
 
-Native staging requires clean reviewed source. Packing and independent candidate
-verification inspect the actual ZIP/tar members and retain full legal texts plus
+Native staging requires clean reviewed source. One publication-handoff check
+inspects the actual ZIP/tar members and retain full legal texts plus
 `notices/source-provenance.txt` and `notices/provenance-source.json`. Missing or changed
 notices, wrong or dirty source identity, duplicate/case-colliding names, traversal and
 links are rejected even when an archive's outer hash matches its manifest.
 
-All five native hosts still execute the actual window and live Cloud scenarios.
-Successful main publication requires the complete tested candidate set. Public asset
-verification records exact bytes and source identity separately from policy checks.
-These bootstrap gates do not establish later media workflows, trusted signing or
-commercial activation.
+Current CI and publication follow the [accepted validation policy](https://github.com/ArcForges/ArcForges-Design/blob/47db6670a727317939b91245e8c0b288834acf99/docs/assurance/ci-and-local-validation-policy.md). Three Windows/Linux candidates and offline/static/security checks replace the five-host runtime matrix. No public asset download or runtime retest is required. These checks do not establish commercial activation.
 
 ## WP02.04 successor
 
-`arcnotes-provenance-tools-r2` binds the reviewed ArcNotes support identity implementation at `0c797e30690a10d8798ddca19ca7f37b16cecf01`. It preserves r1, establishes expected transformed hashes before adaptation, and declares ArcSlate-specific future media/storage producers. The active inventory binds all 16 imported source/build/test files. The portable README preserves source attribution and the corresponding-source location alongside the full root licence. ArcSlate verifies its own native/public runtime independently.
+`arcnotes-provenance-tools-r2` binds the reviewed ArcNotes support identity implementation at `0c797e30690a10d8798ddca19ca7f37b16cecf01`. It preserves r1, establishes expected transformed hashes before adaptation, and declares ArcSlate-specific future media/storage producers. The active inventory binds all 16 imported source/build/test files. The portable README preserves source attribution and the corresponding-source location alongside the full root licence. Any optional local runtime result identifies its actual tested artifact.
+
+The active r3 successor records owner-authored CI/release reduction against the same ArcNotes origin. It preserves r1/r2, their attribution and all unchanged runtime code. Its revised workflow/tool/test bindings remove mandatory smoke/screenshot inputs and repeated validation while retaining one publication handoff integrity check.
