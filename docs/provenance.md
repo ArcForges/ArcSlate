@@ -30,8 +30,8 @@ the full upstream licences and existing dependency notices.
 
 ## Current implementation and verification
 
-The current audit reconciles root and upstream legal texts against pinned sources.
-Four tooling/test files use the reviewed ArcNotes commit
+The original WP00.03 audit reconciled root and upstream legal texts against pinned sources.
+Its four tooling/test files used the reviewed ArcNotes commit
 `e40423a1b14ce8341de35748cc2a093c7c9b77a7`, with recorded product-name substitutions.
 The existing ArcSlate tool/test baseline was compared before replacement. Full AGPL
 terms and the original adapted checker's Apache attribution and terms remain present.
@@ -54,3 +54,7 @@ Successful main publication requires the complete tested candidate set. Public a
 verification records exact bytes and source identity separately from policy checks.
 These bootstrap gates do not establish later media workflows, trusted signing or
 commercial activation.
+
+## WP02.04 successor
+
+`arcnotes-provenance-tools-r2` binds the reviewed ArcNotes support identity implementation at `0c797e30690a10d8798ddca19ca7f37b16cecf01`. It preserves r1, establishes expected transformed hashes before adaptation, and declares ArcSlate-specific future media/storage producers. The active inventory binds all 16 imported source/build/test files. The portable README preserves source attribution and the corresponding-source location alongside the full root licence. ArcSlate verifies its own native/public runtime independently.
