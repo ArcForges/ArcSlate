@@ -16,7 +16,7 @@ dotnet run --project src/ArcForges.ArcSlate
 dotnet run --project eng/ArcForges.Repository -- hooks
 ```
 
-The UI, application state and repository tool are C#. Avalonia/Skia supply packaged native UI/rendering dependencies. The application consumes `ArcForges.Contracts.PublicApi` **1.0.0-ci.36.1** and the private build-time `ArcForges.Build.Policy` **1.0.0-ci.7.1**. It does not ship unused DesktopPlatform media engines.
+The UI, application state and repository tool are C#. Avalonia/Skia supply packaged native UI/rendering dependencies. The application consumes `ArcForges.Contracts.PublicApi` **1.0.0-ci.36.1** and the private build-time `ArcForges.Build.Policy` **1.0.0-ci.20.1**. It does not ship unused DesktopPlatform media engines.
 
 ## Downloads and automation
 
@@ -42,3 +42,9 @@ review history and complete legal/source receipts in actual portable archives.
 The native application remains a C# Avalonia/Skia consumer of exact published packages.
 
 Read [CONTRIBUTING](CONTRIBUTING.md), [security reporting](SECURITY.md) and the [code of conduct](CODE_OF_CONDUCT.md). ArcSlate remains **AGPL-3.0-only**; see [LICENSE](LICENSE) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Build information
+
+Use `ArcSlate --build-info --evidence <path.json>` for offline compiled support information. See [build identity](docs/build-identity.md) for the nine independent version axes and validation.
+
+Build identity and related tooling adapt [ArcNotes source at 0c797e3](https://github.com/ArcForges/ArcNotes/tree/0c797e30690a10d8798ddca19ca7f37b16cecf01) under AGPL-3.0-only. The complete corresponding ArcSlate source is available at each release commit; original attribution and full licence terms remain in this repository and portable packages.
