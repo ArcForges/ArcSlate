@@ -47,3 +47,5 @@ Read [CONTRIBUTING](CONTRIBUTING.md), [security reporting](SECURITY.md) and the 
 Use `ArcSlate --build-info --evidence <path.json>` for offline compiled support information. See [build identity](docs/build-identity.md) for the nine independent version axes and validation.
 
 Build identity and related tooling adapt [ArcNotes source at 0c797e3](https://github.com/ArcForges/ArcNotes/tree/0c797e30690a10d8798ddca19ca7f37b16cecf01) under AGPL-3.0-only. The complete corresponding ArcSlate source is available at each release commit; original attribution and full licence terms remain in this repository and portable packages.
+
+The [dependency admission gate](docs/dependency-policy.md) checks the complete locked closure and upgrade evidence. It adapts [ArcNotes source](https://github.com/ArcForges/ArcNotes/tree/b7358bd7b1dca0671cd51cf6d798d5c09911b198) under AGPL-3.0-only; full source and attribution remain in the immutable provenance records.
